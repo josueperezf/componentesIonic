@@ -32,6 +32,11 @@ export class InicioPage implements OnInit {
       icon: 'hammer',
       name: 'Input - Forms',
       redirectTo: '/input'
+    },
+    {
+      icon: 'list',
+      name: 'Listas - Slider',
+      redirectTo: '/listas'
     }
   ];
 
