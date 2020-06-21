@@ -1,12 +1,12 @@
-<app-header titulo='Lista slider'> <app/-header>
+<app-header titulo='Lista slider'> </app-header>
 <ion-content>
-  <ion-list>
-    <ion-item>
+  <ion-list *ngIf='usuarios'>
+    <ion-item *ngFor='let usuario of usuarios | async; let i = index'>
       <ion-label>
-        <h3>Nombre</h3>
-        <p>Hola Mundo</p>
+        <h3>{{usuario.name}}</h3>
+        <p>{{usuario.email}}</p>
       </ion-label>
-      <ion-label slot="end" text-right > 88888552</ion-label>
+      <ion-label slot="end" text-right > {{ usuario.phone}}</ion-label>
     </ion-item>
   </ion-list>
 </ion-content>
