@@ -37,6 +37,11 @@ export class InicioPage implements OnInit {
       icon: 'list',
       name: 'Listas - Slider',
       redirectTo: '/listas'
+    },
+    {
+      icon: 'reorder',
+      name: 'Lista - reordenable',
+      redirectTo: '/lista-reordenable'
     }
   ];
 

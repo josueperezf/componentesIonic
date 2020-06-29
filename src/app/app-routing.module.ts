@@ -21,6 +21,10 @@ const routes: Routes = [
     path: 'listas',
     loadChildren: () => import('./pages/listas/listas.module').then( m => m.ListasPageModule)
   },
+  {
+    path: 'lista-reordenable',
+    loadChildren: () => import('./pages/lista-reordenable/lista-reordenable.module').then( m => m.ListaReordenablePageModule)
+  },
 
 ];
 
