@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { DataService } from 'src/app/servicios/data.service';
-
+import { IonList } from '@ionic/angular';
 interface Usuario {
   id: number;
   name: string;
@@ -17,10 +17,13 @@ interface Usuario {
 
 export class ListasPage implements OnInit {
   public usuarios; // Usuario[];
+  @ViewChild('lista', {static: false}) lista: IonList;
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
     this.usuarios = this.dataService.getUsers();
+    // la linea anterior es lo mismo que lo anterior,
+    // con la diferencia, que para que lo anterior funcione se debe colocar el async en el for del html
     /*
     this.dataService.getUsers().subscribe(
       (data: Usuario[] ) => {
@@ -31,5 +34,17 @@ export class ListasPage implements OnInit {
       }
     );*/
   }
-
+  public favorite(usuario) {
+    console.log('favorite', usuario);
+    // cierra el slider de la lista
+    this.lista.closeSlidingItems();
+  }
+  public share(usuario) {
+    console.log('share', usuario);
+    this.lista.closeSlidingItems();
+  }
+  public borrar(usuario) {
+    console.log('borrar', usuario);
+    this.lista.closeSlidingItems();
+  }
 }
