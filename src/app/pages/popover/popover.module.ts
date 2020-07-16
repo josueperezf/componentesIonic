@@ -4,11 +4,12 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PopoverPageRoutingModule } from './popover-routing.module';
+
 
 import { PopoverPage } from './popover.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 import { PopinfoComponent } from 'src/app/components/popinfo/popinfo.component';
+import { PopoverPageRoutingModule } from './popover-routing.module';
 
 @NgModule({
   imports: [
