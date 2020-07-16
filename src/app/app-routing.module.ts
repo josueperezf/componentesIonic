@@ -13,7 +13,8 @@ const routes: Routes = [
   {
     path: 'infinite-scroll',
     loadChildren: () => import('./pages/infinite-scroll/infinite-scroll.module').then( m => m.InfiniteScrollPageModule)
-  },  {
+  },
+  {
     path: 'input',
     loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
   },
@@ -25,6 +26,18 @@ const routes: Routes = [
     path: 'lista-reordenable',
     loadChildren: () => import('./pages/lista-reordenable/lista-reordenable.module').then( m => m.ListaReordenablePageModule)
   },
+  {
+    path: 'loading',
+    loadChildren: () => import('./pages/loading/loading.module').then( m => m.LoadingPageModule)
+  },
+  {
+    path: 'modal',
+    loadChildren: () => import('./pages/modal/modal.module').then( m => m.ModalPageModule)
+  },
+  {
+    path: 'popover',
+    loadChildren: () => import('./pages/popover/popover.module').then( m => m.PopoverPageModule)
+  }
 
 ];
 
