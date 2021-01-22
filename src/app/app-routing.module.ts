@@ -37,7 +37,11 @@ const routes: Routes = [
   {
     path: 'popover',
     loadChildren: () => import('./pages/popover/popover.module').then( m => m.PopoverPageModule)
+  },  {
+    path: 'date-time',
+    loadChildren: () => import('./pages/date-time/date-time.module').then( m => m.DateTimePageModule)
   }
+
 
 ];
 

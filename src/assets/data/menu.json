@@ -48,5 +48,10 @@
       "icon": "tablet-portrait",
       "name": "Popover",
       "redirectTo": "/popover"
+    },
+    {
+      "icon": "calendar-outline",
+      "name": "DateTime",
+      "redirectTo": "/date-time"
     }
 ]

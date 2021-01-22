@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-input',
@@ -16,8 +17,10 @@ export class InputPage implements OnInit {
       password: '',
     };
   }
-  enviar() {
+  enviar(formulario: NgForm) {
     console.log('entro al metod enviar');
     console.log(this.usuario);
+    // esto es para ver la informacion del formulario, si esta validado y demas
+    console.log(formulario);
   }
 }

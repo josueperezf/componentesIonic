@@ -10,7 +10,7 @@
     </ion-item>
   </ion-list>
 
-  <form #formulario="ngForm" (ngSubmit)="enviar()" *ngIf='usuario'>
+  <form #formulario="ngForm" (ngSubmit)="enviar(formulario)" *ngIf='usuario'>
     <ion-list>
       <ion-list-header>
         <ion-label> Formulario template: valido {{formulario.valid  }} </ion-label>
