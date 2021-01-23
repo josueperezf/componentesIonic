@@ -6,6 +6,7 @@
       <ion-label>Item {{i+1}}</ion-label>
     </ion-item>
   </ion-list>
+  <!-- threshold es para ver que tan cerca del fin del telefono debe llegar el scroll para cargar nueva data-->
   <ion-infinite-scroll threshold="150px" (ionInfinite)="cargarData($event)">
     <ion-infinite-scroll-content
       loadingSpinner="crescent"

@@ -53,5 +53,10 @@
       "icon": "calendar-outline",
       "name": "DateTime",
       "redirectTo": "/date-time"
+    },
+    {
+      "icon": "grid-outline",
+      "name": "Grid",
+      "redirectTo": "/grid"
     }
 ]
