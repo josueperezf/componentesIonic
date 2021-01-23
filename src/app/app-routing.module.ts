@@ -44,6 +44,18 @@ const routes: Routes = [
   {
     path: 'grid',
     loadChildren: () => import('./pages/grid/grid.module').then( m => m.GridPageModule)
+  },
+  {
+    path: 'progress',
+    loadChildren: () => import('./pages/progress/progress.module').then( m => m.ProgressPageModule)
+  },
+  {
+    path: 'refresher-con-animacion',
+    loadChildren: () => import('./pages/refresher-con-animacion/refresher-con-animacion.module').then( m => m.RefresherConAnimacionPageModule)
+  },
+  {
+    path: 'buscador',
+    loadChildren: () => import('./pages/buscador/buscador.module').then( m => m.BuscadorPageModule)
   }
 
 

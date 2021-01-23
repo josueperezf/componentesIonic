@@ -17,4 +17,8 @@ export class DataService {
     const url = 'assets/data/menu.json';
     return this.httpClient.get<Componente[]>(url);
   }
+  getAlbums() {
+    const url = 'https://jsonplaceholder.typicode.com/albums';
+    return this.httpClient.get<any[]>(url);
+  }
 }

@@ -28,3 +28,11 @@
 .rojo span, .rojo .sc-ion-action-sheet-md{
     color: red;
 }
+
+ion-item{
+    --background:red;
+}
+
+ion-searchbar{
+    --box-shadow:none !important;
+}

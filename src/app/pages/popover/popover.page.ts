@@ -16,8 +16,12 @@ export class PopoverPage implements OnInit {
     const popover = await this.popoverController.create({
       component: PopinfoComponent,
       event: ev,
-      translucent: true
+      translucent: true,
+      // lo siguiente es para que seleccione una opcion de la lista para poder salir
+      backdropDismiss: false
     });
-    return await popover.present();
+    await popover.present();
+    const {data} = await popover.onWillDismiss();
+    console.log(data);
   }
 }

@@ -5,7 +5,7 @@
       "redirectTo": "/action-sheet"
     },
     {
-      "icon": "appstore",
+      "icon": "alert-circle-outline",
       "name": "Alert",
       "redirectTo": "/alert"
     },
@@ -30,7 +30,7 @@
       "redirectTo": "/listas"
     },
     {
-      "icon": "reorder",
+      "icon": "reorder-three-outline",
       "name": "Lista - reordenable",
       "redirectTo": "/lista-reordenable"
     },
@@ -58,5 +58,20 @@
       "icon": "grid-outline",
       "name": "Grid",
       "redirectTo": "/grid"
+    },
+    {
+      "icon": "code-working-outline",
+      "name": "progress",
+      "redirectTo": "/progress"
+    },
+    {
+      "icon": "arrow-down-circle-outline",
+      "name": "refresher con animacion",
+      "redirectTo": "/refresher-con-animacion"
+    },
+    {
+      "icon": "search-outline",
+      "name": "Buscador",
+      "redirectTo": "/buscador"
     }
 ]

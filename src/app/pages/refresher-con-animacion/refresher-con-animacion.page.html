@@ -1,0 +1,15 @@
+<app-header titulo="Refresh animate"></app-header>
+<!-- https://animate.style/ -->
+<!-- npm install animate.css --save -->
+<!-- en package json  esta la importacion-->
+<!-- en la documentacion oficial hay mas modelos para animaciones -->
+<ion-content>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)" pullFactor="0.8" pullMin="60" pullMax="120">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-list>
+    <ion-item *ngFor="let item of items; let i = index" class="animate__animated animate__fadeInDown ">
+      <ion-label>Item {{ i + 1 }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
