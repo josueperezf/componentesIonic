@@ -1,5 +1,8 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" color="primary"></ion-back-button>
+    </ion-buttons>
     <ion-title>Buscador</ion-title>
   </ion-toolbar>
   <!--  la propiedad debounce determina el tiempo que quiero que tome para hacer la llamada al evento ionChange-->
@@ -9,7 +12,7 @@
     animated
     inputmode="text"
     (ionChange)="onSearchChange($event)"
-    showCancelButton="always"></ion-searchbar>
+    ></ion-searchbar>
 </ion-header>
 
 <ion-content>
