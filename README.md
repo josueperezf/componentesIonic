@@ -1,5 +1,32 @@
 # componentes Ionic
 
+## Maquina virtual android
+
+1. instalar android studio, si ya lo tenemos debemos ir a configuracion y seleccionar SDK manager, alli debemos seleccionar una version reciente de android pero que no sea alfa *Nota:* Si tenemos un proyecto abierto lo cerramos y veremos las opciones
+
+2. en la seccion de configuracion debemos a configuracion  AVD Manager, 'para emular una version especifica de android', si no tenemos dana, podemos precionar donde dice 'crear dispositivo virtual', alli podemos seleccionar una version de telefono especifico
+
+### crear un dispositvo
+
+    en la seccion AVD Manager, seleccionamos 'create virtual device', alli presionamos en 'New hardware profile'
+
+ejemplo para 'note 10 plus'
+
+1. *Device name:* nombre que le daremos al telefono, ejemplo: 'note 10 plus'
+
+2. *Device Type:* Phone/tablet
+
+3. *Screen:* 6,8
+
+4. *Resolution:* 1440 1920
+
+5. *Memory:* 3
+
+Luego le damos en siguiente, en esa seccion nos mostrara que version de android queremos para ese dispositivo, si no tenemos ninguna, alli nos muestra la opcion de descargar, presionamos siguiente
+
+luego presionamos finish, esto crearia un dispositivo virtual, para abrirlo tendriamos que presionar en la imagen de play
+
+
 ## Instalacion de animate.style para la animacion
 
 lo use en refresher animaciones
