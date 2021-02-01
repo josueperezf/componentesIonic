@@ -11,6 +11,8 @@ export class ModalPage implements OnInit {
   constructor(public modalController: ModalController) { }
 
   ngOnInit() {
+    console.log('CARGO EL MODAL COMPONENT');
+    
     // this.presentModal();
   }
   async abrirModal() {
