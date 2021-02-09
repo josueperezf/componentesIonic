@@ -38,7 +38,7 @@ para este proceso si queremos documentacion oficial, podemos ir a la pagina de i
 
 - En este momento le podemos asignar el appId de la aplicacion en el archivo capacitor.config.json, si esto fuera con cordova es en el archivo config.xml
 
-- Si tenemos nuestra carpeta www creada, podemos ejecutar el siguiente comando para crear nuestro proyecto en android *ionic add android*, esto creara la carpetas android y .gradle
+- Si tenemos nuestra carpeta www creada, podemos ejecutar el siguiente comando para crear nuestro proyecto en android *ionic capacitor add android*, esto creara la carpetas android y .gradle
 
 - *OPCION LENTA* si realizamos cambios en ionic y queremos actualizar nuestra carpeta android con ese contenido, podemos ejecutar *ionic capacitor copy android* por cada vez que guardemos cambios en el proyecto, si hacemos esto teniendo en ejecucion android studio, los cambios no se veran de una vez, tendre que precionar refrescar que es el boton dond antes estaba play para abrir la app en adroid studio, tambien se podria precionar control R
 
